@@ -1,0 +1,12 @@
+[package]
+name = "testmodule"
+version = "0.1.0"
+authors = ["Markus Ast <m@rkusa.st>"]
+edition = "2018"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+mlua = { git = "https://github.com/khvzak/mlua.git", branch = "dev", default-features = false, features = ["lua51", "vendored"] }
+mlua_derive = { git = "https://github.com/khvzak/mlua.git", branch = "dev" }
